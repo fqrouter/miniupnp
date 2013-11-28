@@ -10,12 +10,12 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+#define MIN(x,y) (((x)<(y))?(x):(y))
 #ifdef _WIN32
 #include <winsock2.h>
 #include <ws2tcpip.h>
 #include <io.h>
 #define MAXHOSTNAMELEN 64
-#define MIN(x,y) (((x)<(y))?(x):(y))
 #define snprintf _snprintf
 #define socklen_t int
 #ifndef strncasecmp
